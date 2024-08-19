@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom";
 import {ProductsAtom} from "../atoms/ProductsAtom.tsx";
 import ProductsList from "./ProductsList.tsx";
 
+
 export default function Home() {
 
     const [, setProducts] = useAtom(ProductsAtom);
@@ -19,7 +20,7 @@ export default function Home() {
     },[])
 
     return (
-        <div>
+        <div flex-wrap>
             <h1 className="menu-title text-5xl m-5">The react template</h1>
             <p className="font-bold">This is a template for a react project with Jotai, Typescript, DaisyUI, Vite (& more)</p>
 
